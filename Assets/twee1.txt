@@ -1,0 +1,35 @@
+﻿:: Start
+Woke up in the dark again. I have to stop waking up so ((late |early)) like this. 
+
+Something's glowing... did I plug in my night light?
+
+[[Check out the weird glow|night_light]] 
+[[Go back to sleep|back_to_sleep]]
+[[Get dressed|get_dressed]]
+
+
+:: night_light
+I don't remember plugging this in. I haven't used it since I was a kid. 
+
+It's a little plastic cube, it used to glow bright green but ((someone has|it seems I )) covered it in black nail polish. 
+
+[[Go back to sleep|back_to_sleep]]
+[[Get dressed|get_dressed]]
+
+
+:: StoryTitle
+Untitled Story
+
+
+:: back_to_sleep
+No
+
+
+:: get_dressed
+
+
+
+:: StoryAuthor
+Anonymous
+
+
