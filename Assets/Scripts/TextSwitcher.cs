@@ -10,6 +10,8 @@ public class TextSwitcher : MonoBehaviour {
 	public HyperText HyperTextA;
 	public HyperText HyperTextB;
 
+	public AudioClip woosh;
+
 	HyperText activeText;
 
 	void Start()
@@ -22,6 +24,7 @@ public class TextSwitcher : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(KeyCode.Tab))
 		{
+			AudioSource.PlayClipAtPoint(woosh, transform.position);
 			//iTween.RotateTo(HingeA.gameObject, iTween.Hash("x", 180, "time", 0.75f, "islocal", false, "oncomplete", "Rotated", "oncompletetarget", gameObject));
 			//iTween.RotateTo(HingeB.gameObject, iTween.Hash("x", 180, "time", 0.75f, "islocal", false));
 			//iTween.ValueTo(HyperTextA.gameObject, iTween.Hash("from", 1, "to", 0, "time", 1, "onupdate", "SetAlpha", "onupdatetarget", HyperTextA.canvasRenderer.gameObject));

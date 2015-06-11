@@ -27,8 +27,8 @@ I00
 sS'pos'
 p15
 (lp16
-I245
-aI14
+I308
+aI150
 asS'passage'
 p17
 (itiddlywiki
@@ -37,11 +37,11 @@ p18
 (dp20
 S'text'
 p21
-VWoke up in the dark again. I have to stop waking up so ((late |early)) like this. \u000a\u000aSomething's glowing... did I plug in my night light?\u000a\u000a[[Check out the weird glow|night_light]] \u000a[[Go back to sleep|back_to_sleep]]\u000a[[Get dressed|get_dressed]]
+VWhy is it so dark? I have to stop waking up so ((late |early)) like this. \u000a\u000aSomething's glowing over there... I don't remember plugging in my nightlight.\u000a\u000a\u000a[[Check out the weird glow|night_light]] \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
 p22
 sS'title'
 p23
-VStart
+VWaking
 p24
 sS'modified'
 p25
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2015
 I6
-I8
-I1
-I29
-I45
-I0
-I159
+I10
+I22
+I36
+I20
+I2
+I161
 I1
 tp27
 (dp28
@@ -159,15 +159,15 @@ g14
 I00
 sg15
 (lp61
-F507.0
-aF36.0
+F405.0
+aF324.0
 asg17
 (itiddlywiki
 Tiddler
 p62
 (dp63
 g21
-VI don't remember plugging this in. I haven't used it since I was a kid. \u000a\u000aIt's a little plastic cube, it used to glow bright green but ((someone has|it seems I )) covered it in black nail polish. \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a[[Get dressed|get_dressed]]
+VI haven't used this nightlight since I was a kid. \u000a\u000aIt's a little plastic cube, it used to glow bright green but ((someone has|it seems I )) covered it in black nail polish. \u000a\u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
 p64
 sg23
 Vnight_light
@@ -176,12 +176,12 @@ sg25
 g26
 ((I2015
 I6
-I8
+I10
+I22
+I36
+I27
 I2
-I41
-I29
-I0
-I159
+I161
 I1
 tp66
 (dp67
@@ -209,15 +209,15 @@ g14
 I01
 sg15
 (lp76
-F240.0
-aF226.0
+F196.0
+aF398.0
 asg17
 (itiddlywiki
 Tiddler
 p77
 (dp78
 g21
-VNo
+VNo, there's no point now. I better just get up, my parents ((will be home soon and| are still gone but  )) I have to take care of the house.\u000a\u000a\u000a[[Get dressed|get_dressed]]
 p79
 sg23
 Vback_to_sleep
@@ -226,12 +226,12 @@ sg25
 g26
 ((I2015
 I6
-I8
+I10
+I22
+I36
+I32
 I2
-I41
-I49
-I0
-I159
+I161
 I1
 tp81
 (dp82
@@ -259,8 +259,8 @@ g14
 I00
 sg15
 (lp91
-F474.0
-aF227.0
+F351.0
+aF551.0
 asg17
 (itiddlywiki
 Tiddler
@@ -291,10 +291,60 @@ sg31
 (lp100
 sg33
 g99
+sbsa(dp101
+g14
+I00
+sg15
+(lp102
+F258.0
+aF11.0
+asg17
+(itiddlywiki
+Tiddler
+p103
+(dp104
+g21
+VA ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." "That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."\u000a\u000a\u000a[[Wake up|Waking]]
+p105
+sg23
+VStart
+p106
+sg25
+g26
+((I2015
+I6
+I10
+I22
+I36
+I16
+I2
+I161
+I1
+tp107
+(dp108
+tp109
+Rp110
+sg31
+(lp111
+sg33
+g26
+((I2015
+I6
+I8
+I13
+I58
+I35
+I0
+I159
+I1
+tp112
+(dp113
+tp114
+Rp115
 sbsasS'scale'
-p101
+p116
 I1
 sS'snapping'
-p102
+p117
 I00
 ss.

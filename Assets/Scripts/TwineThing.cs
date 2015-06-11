@@ -40,8 +40,13 @@ public class TwineThing : MonoBehaviour {
 
 		public void SetBodies(string rawText)
 		{
+			//rawText = rawText.Substring(0, rawText.Length-5);
+//			while(rawText[rawText.Length-1] == '\n')
+//			{
+//				Debug.Log ("Removing break, " + rawText.Length);
+//				rawText = rawText.Remove(rawText.Length-1);
+//			}
 			string textWithLinks = TwineToHyper(rawText);
-
 			FindAndSetColoredPassages(textWithLinks, this);
 		}
 
@@ -212,7 +217,7 @@ public class TwineThing : MonoBehaviour {
 		                          (int)(color.g * 255), 
 		                          (int)(color.b * 255));
 
-		Debug.Log("Color: " + rgbString);
+		//Debug.Log("Color: " + rgbString);
 		return rgbString;
 	}
 
