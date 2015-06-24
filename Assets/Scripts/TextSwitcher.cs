@@ -4,6 +4,8 @@ using Candlelight.UI;
 
 public class TextSwitcher : MonoBehaviour {
 
+	public TwineThing twineThing;
+
 	public Transform HingeA;
 	public Transform HingeB;
 
@@ -24,6 +26,8 @@ public class TextSwitcher : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(KeyCode.Tab))
 		{
+			if(twineThing.blockInput) return;
+
 			AudioSource.PlayClipAtPoint(woosh, transform.position);
 			//iTween.RotateTo(HingeA.gameObject, iTween.Hash("x", 180, "time", 0.75f, "islocal", false, "oncomplete", "Rotated", "oncompletetarget", gameObject));
 			//iTween.RotateTo(HingeB.gameObject, iTween.Hash("x", 180, "time", 0.75f, "islocal", false));

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Candlelight.UI;
+using System.Collections;
 
 public class TwineThing : MonoBehaviour {
 
@@ -14,6 +15,20 @@ public class TwineThing : MonoBehaviour {
 	 * 	The marked text is colored differently and is changeable while playing.
 	 */ 
 
+	public enum PassageType {A, B};
+
+	private static TwineThing instance = null;
+	public static TwineThing Instance
+	{
+		get
+		{
+			if(instance == null)
+			{
+				instance = Object.FindObjectOfType<TwineThing>();
+			}
+			return instance;
+		}
+	}
 
 	public TextAsset TweeFile;
 	public HyperText MainHyperText;
@@ -25,18 +40,62 @@ public class TwineThing : MonoBehaviour {
 
 	static Color SColorA;
 	static Color SColorB;
-	
+
+	public bool blockInput = false;
+
+	public AudioClip woosh;
+	public AudioClip click;
+
+	public GameObject inputGlyph;
+
+	private TweePassage currentPassage;
+
+	// Keeping track of which version was selected of each passage
+	// <passageName, passagetype> 
+	public Dictionary<string, PassageType> passageResults = new Dictionary<string, PassageType>();
+
+	HyperText activeText;
 	string tweeText;
 
 	public Dictionary<string, TweePassage> passages = new Dictionary<string, TweePassage>();
 		
 	[System.Serializable]
-	public class TweePassage {
+	public class TweePassage 
+	{
 		public string title;
 		public string[] tags;
-		public string body;
-		public string bodyA; // alternative body with some parts different
-		public string bodyB; // alternative body with some parts different
+		private string body;
+		private string bodyA; // alternative body with some parts different
+		private string bodyB; // alternative body with some parts different
+
+		public string Body { set { body = value; } get { return SplitBodyInSubVersion(body); } }
+		public string BodyA { set { bodyA = value; } get { return SplitBodyInSubVersion(bodyA); } }
+		public string BodyB { set { bodyB = value; } get { return SplitBodyInSubVersion(bodyB); } }
+
+		/**
+		 * Which text to show depends on earlier choices, split given body string up to match
+		 * 
+		 */
+		string SplitBodyInSubVersion(string rawBody)
+		{
+			string result = rawBody;
+
+			while(result.Contains("(%"))
+			{
+				int startI = result.IndexOf ("(%");
+				int endI = result.IndexOf("%)");
+				int nextSpace = result.IndexOf(" ", startI);
+
+				string valKey = result.Substring(startI+2, nextSpace-startI-2);
+				string val = valKey.Substring(0,1);
+				string key = valKey.Substring(1);
+
+				Debug.Log("Key: " + key + " Val: " + TwineThing.Instance.passageResults[key]);
+
+				result = result.Replace("(%", "");
+			}
+			return result;
+		}
 
 		public void SetBodies(string rawText)
 		{
@@ -53,7 +112,8 @@ public class TwineThing : MonoBehaviour {
 	}
 	
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		SColorA = ColorA;
 		SColorB = ColorB;
 
@@ -61,10 +121,48 @@ public class TwineThing : MonoBehaviour {
 		Parse();
 
 		TweePassage startPassage = passages["Start"];
+		currentPassage = startPassage;
 
 		SetUiText(startPassage);
+
+		activeText = HyperTextA;
+		HyperTextB.CrossFadeAlpha(0, 0, true);
 	}
 
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.Tab))
+		{
+			if(blockInput) return;
+			
+			AudioSource.PlayClipAtPoint(woosh, transform.position);
+
+			if (activeText == HyperTextA)
+			{
+				HyperTextA.CrossFadeAlpha(0, 0.5f, false);
+				HyperTextB.CrossFadeAlpha(1, 1, false);
+				activeText = HyperTextB;
+				RotateGlyphUp();
+			}
+			else 
+			{
+				HyperTextA.CrossFadeAlpha(1, 1, false);
+				HyperTextB.CrossFadeAlpha(0, 0.5f, false);
+				activeText = HyperTextA;
+				RotateGlyphDown();
+			}
+		}
+	}
+
+	void RotateGlyphUp()
+	{
+		iTween.RotateTo(inputGlyph, iTween.Hash("x", 90, "time", 0.5f));
+	}
+
+	void RotateGlyphDown()
+	{
+		iTween.RotateTo(inputGlyph, iTween.Hash("x", 0, "time", 0.5f));
+	}
 
 	private void Parse () {
 		TweePassage currentPassage = null;
@@ -189,15 +287,16 @@ public class TwineThing : MonoBehaviour {
 			bText = bText.Replace(colorPassage, "<color=" + ColorToHex(SColorB) + ">" + variants[1] + "</Color>");
 		}
 
-		passage.body = mainText;
-		passage.bodyA = aText;
-		passage.bodyB = bText;
+		passage.Body = mainText;
+		passage.BodyA = aText;
+		passage.BodyB = bText;
 	}
 	
 	public void OnLinkClick(HyperText hyperText, HyperText.LinkInfo linkInfo)
 	{
 		//hyperText.text = passages[linkInfo.Id].body;
-		SetUiText(passages[linkInfo.Id]);
+		//SetUiText(passages[linkInfo.Id]);
+		StartCoroutine(SwitchToPassage(passages[linkInfo.Id], 0.25f));
 	}
 
 	/**
@@ -205,10 +304,47 @@ public class TwineThing : MonoBehaviour {
 	 */
 	void SetUiText(TweePassage passage)
 	{
-		MainHyperText.text = passage.body;
-		HyperTextA.text = passage.bodyA;
-		HyperTextB.text = passage.bodyB;
+		MainHyperText.text = passage.Body;
+		HyperTextA.text = passage.BodyA;
+		HyperTextB.text = passage.BodyB;
 	}
+
+	IEnumerator SwitchToPassage(TweePassage passage, float time)
+	{
+		blockInput = true;
+	
+		AudioSource.PlayClipAtPoint(click, transform.position);
+
+		MainHyperText.CrossFadeAlpha(0, time, false);
+		if(activeText == HyperTextA)
+		{
+			passageResults.Add(currentPassage.title, PassageType.A);
+			HyperTextA.CrossFadeAlpha(0, time, false);
+		}
+		else
+		{
+			passageResults.Add(currentPassage.title, PassageType.B);
+			HyperTextB.CrossFadeAlpha(0, time, false);
+		}
+
+		yield return new WaitForSeconds(time);
+
+		SetUiText(passage);
+
+		MainHyperText.CrossFadeAlpha(1, time, false);
+		if(activeText == HyperTextA)
+		{
+			HyperTextA.CrossFadeAlpha(1, time, false);
+		}
+		else 
+		{
+			HyperTextB.CrossFadeAlpha(1, time, false);
+		}
+
+		currentPassage = passage;
+		blockInput = false;
+	}
+
 
 	static string ColorToHex(Color color)
 	{

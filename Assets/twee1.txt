@@ -1,8 +1,15 @@
 ﻿:: Start
-A ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." "That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."
-
+A ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." 
+"That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."
 
 [[Wake up|Waking]]
+[[Look at the moon|Moon]]
+
+
+:: Moon
+The Moon once begged her Mother to make her a gown. "How can I?" replied she; "there's no fitting your figure. At one time you're a New Moon, and at another you're a Full Moon; and between whiles you're neither one nor the other."
+
+-Aesop
 
 
 :: StoryTitle
@@ -10,7 +17,7 @@ Untitled Story
 
 
 :: Waking
-Why is it so dark? I have to stop waking up so ((late |early)) like this. 
+Wee (%AStart Why is it so dark? I have to stop waking up so ((late |early)) like this. %)
 
 Something's glowing over there... I don't remember plugging in my nightlight.
 

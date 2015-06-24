@@ -1,0 +1,16 @@
+Hi. Thanks for buying my textures. 
+
+In the ZIP archive you will find this help file, one folder (JPG) wich contains 12 JPG files with all textures and one folder that contain one PAT file for Photoshop. All files are 300x300 px size.
+
+To upload the PAT file you need to follow these steps:
+
+1. Navigate to your Photoshop/Presets/Patterns folder and copy the .pat file to that folder.
+2. In Photoshop, double click on the layer you want to apply the pattern to, or activate the ‘Pattern’ checkbox in your Brushes palette (Window/Brushes), if you want to apply the pattern to a brush
+3. Click on the dropdown bar in the small pattern preview box, click on the arrow to the upper right, and select ‘Load Pattern’
+4. Find the .pat file you just copied to the Patterns folder in step 1, and hit ‘open’.
+5. Select ‘Add’ from the popup box to add your new patterns to the existing ones in your palette.
+
+If you have questions just post a comment and if you like this textures pack please recomande it.
+
+Best regards,
+Silviu Stefu

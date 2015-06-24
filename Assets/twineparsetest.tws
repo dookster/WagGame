@@ -27,8 +27,8 @@ I00
 sS'pos'
 p15
 (lp16
-I308
-aI150
+I273
+aI163
 asS'passage'
 p17
 (itiddlywiki
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VWhy is it so dark? I have to stop waking up so ((late |early)) like this. \u000a\u000aSomething's glowing over there... I don't remember plugging in my nightlight.\u000a\u000a\u000a[[Check out the weird glow|night_light]] \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
+VWee (%AStart Why is it so dark? I have to stop waking up so ((late |early)) like this. %)\u000a\u000aSomething's glowing over there... I don't remember plugging in my nightlight.\u000a\u000a\u000a[[Check out the weird glow|night_light]] \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2015
 I6
-I10
-I22
-I36
-I20
-I2
-I161
+I26
+I0
+I31
+I26
+I4
+I177
 I1
 tp27
 (dp28
@@ -206,7 +206,7 @@ tp73
 Rp74
 sbsa(dp75
 g14
-I01
+I00
 sg15
 (lp76
 F196.0
@@ -304,7 +304,7 @@ Tiddler
 p103
 (dp104
 g21
-VA ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." "That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."\u000a\u000a\u000a[[Wake up|Waking]]
+VA ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." \u000a"That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."\u000a\u000a[[Wake up|Waking]]\u000a[[Look at the moon|Moon]]
 p105
 sg23
 VStart
@@ -313,12 +313,12 @@ sg25
 g26
 ((I2015
 I6
+I26
 I10
-I22
-I36
-I16
-I2
-I161
+I14
+I24
+I4
+I177
 I1
 tp107
 (dp108
@@ -341,10 +341,60 @@ tp112
 (dp113
 tp114
 Rp115
+sbsa(dp116
+g14
+I01
+sg15
+(lp117
+I455
+aI110
+asg17
+(itiddlywiki
+Tiddler
+p118
+(dp119
+g21
+VThe Moon once begged her Mother to make her a gown. "How can I?" replied she; "there's no fitting your figure. At one time you're a New Moon, and at another you're a Full Moon; and between whiles you're neither one nor the other."\u000a\u000a-Aesop
+p120
+sg23
+VMoon
+p121
+sg25
+g26
+((I2015
+I6
+I26
+I10
+I14
+I9
+I4
+I177
+I1
+tp122
+(dp123
+tp124
+Rp125
+sg31
+(lp126
+sg33
+g26
+((I2015
+I6
+I26
+I10
+I13
+I47
+I4
+I177
+I1
+tp127
+(dp128
+tp129
+Rp130
 sbsasS'scale'
-p116
+p131
 I1
 sS'snapping'
-p117
+p132
 I00
 ss.
