@@ -27,8 +27,8 @@ I00
 sS'pos'
 p15
 (lp16
-I273
-aI163
+I283
+aI341
 asS'passage'
 p17
 (itiddlywiki
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VWee (%AStart Why is it so dark? I have to stop waking up so ((late |early)) like this. %)\u000a\u000aSomething's glowing over there... I don't remember plugging in my nightlight.\u000a\u000a\u000a[[Check out the weird glow|night_light]] \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
+VWee (%AThistle Why is it so dark? I have to stop waking up so ((late |early)) like this. %)\u000a\u000aSomething's glowing over there... I don't remember plugging in my nightlight.\u000a\u000a\u000a[[Check out the weird glow|night_light]] \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2015
 I6
 I26
-I0
-I31
-I26
+I17
+I55
+I25
 I4
 I177
 I1
@@ -159,8 +159,8 @@ g14
 I00
 sg15
 (lp61
-F405.0
-aF324.0
+F415.0
+aF502.0
 asg17
 (itiddlywiki
 Tiddler
@@ -209,8 +209,8 @@ g14
 I00
 sg15
 (lp76
-F196.0
-aF398.0
+F206.0
+aF576.0
 asg17
 (itiddlywiki
 Tiddler
@@ -259,8 +259,8 @@ g14
 I00
 sg15
 (lp91
-F351.0
-aF551.0
+F361.0
+aF729.0
 asg17
 (itiddlywiki
 Tiddler
@@ -293,11 +293,11 @@ sg33
 g99
 sbsa(dp101
 g14
-I00
+I01
 sg15
 (lp102
-F258.0
-aF11.0
+F267.0
+aF178.0
 asg17
 (itiddlywiki
 Tiddler
@@ -307,16 +307,16 @@ g21
 VA ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." \u000a"That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."\u000a\u000a[[Wake up|Waking]]\u000a[[Look at the moon|Moon]]
 p105
 sg23
-VStart
+VThistle
 p106
 sg25
 g26
 ((I2015
 I6
 I26
-I10
-I14
-I24
+I17
+I54
+I12
 I4
 I177
 I1
@@ -343,18 +343,18 @@ tp114
 Rp115
 sbsa(dp116
 g14
-I01
+I00
 sg15
 (lp117
-I455
-aI110
+I461
+aI176
 asg17
 (itiddlywiki
 Tiddler
 p118
 (dp119
 g21
-VThe Moon once begged her Mother to make her a gown. "How can I?" replied she; "there's no fitting your figure. At one time you're a New Moon, and at another you're a Full Moon; and between whiles you're neither one nor the other."\u000a\u000a-Aesop
+VThe Moon once begged ((her Mother|his Father)) to make ((her|him)) a ((gown|hat )). "How can I?" replied ((she|he )); "there's no fitting your figure. At one time you're a New Moon, and at another you're a Full Moon; and between whiles you're neither one nor the other."\u000a\u000a-Aesop(( |?))\u000a\u000a[[Thistle|Thistle]]
 p120
 sg23
 VMoon
@@ -364,9 +364,9 @@ g26
 ((I2015
 I6
 I26
-I10
-I14
-I9
+I18
+I0
+I30
 I4
 I177
 I1
@@ -391,10 +391,60 @@ tp127
 (dp128
 tp129
 Rp130
+sbsa(dp131
+g14
+I00
+sg15
+(lp132
+F267.0
+aF24.0
+asg17
+(itiddlywiki
+Tiddler
+p133
+(dp134
+g21
+V\u000a[[Thistle|Thistle]]\u000a[[Moon|Moon]]
+p135
+sg23
+VStart
+p136
+sg25
+g26
+((I2015
+I6
+I26
+I17
+I55
+I15
+I4
+I177
+I1
+tp137
+(dp138
+tp139
+Rp140
+sg31
+(lp141
+sg33
+g26
+((I2015
+I6
+I26
+I17
+I54
+I16
+I4
+I177
+I1
+tp142
+(dp143
+tp144
+Rp145
 sbsasS'scale'
-p131
+p146
 I1
 sS'snapping'
-p132
+p147
 I00
 ss.

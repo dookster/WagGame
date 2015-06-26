@@ -133,24 +133,29 @@ public class TwineThing : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(KeyCode.Tab))
 		{
-			if(blockInput) return;
-			
-			AudioSource.PlayClipAtPoint(woosh, transform.position);
+			SwitchGlyph();
+		}
+	}
 
-			if (activeText == HyperTextA)
-			{
-				HyperTextA.CrossFadeAlpha(0, 0.5f, false);
-				HyperTextB.CrossFadeAlpha(1, 1, false);
-				activeText = HyperTextB;
-				RotateGlyphUp();
-			}
-			else 
-			{
-				HyperTextA.CrossFadeAlpha(1, 1, false);
-				HyperTextB.CrossFadeAlpha(0, 0.5f, false);
-				activeText = HyperTextA;
-				RotateGlyphDown();
-			}
+	public void SwitchGlyph()
+	{
+		if(blockInput) return;
+		
+		AudioSource.PlayClipAtPoint(woosh, transform.position);
+		
+		if (activeText == HyperTextA)
+		{
+			HyperTextA.CrossFadeAlpha(0, 0.5f, false);
+			HyperTextB.CrossFadeAlpha(1, 1, false);
+			activeText = HyperTextB;
+			RotateGlyphUp();
+		}
+		else 
+		{
+			HyperTextA.CrossFadeAlpha(1, 1, false);
+			HyperTextB.CrossFadeAlpha(0, 0.5f, false);
+			activeText = HyperTextA;
+			RotateGlyphDown();
 		}
 	}
 
@@ -318,12 +323,12 @@ public class TwineThing : MonoBehaviour {
 		MainHyperText.CrossFadeAlpha(0, time, false);
 		if(activeText == HyperTextA)
 		{
-			passageResults.Add(currentPassage.title, PassageType.A);
+			if(!passageResults.ContainsKey(currentPassage.title)) passageResults.Add(currentPassage.title, PassageType.A);
 			HyperTextA.CrossFadeAlpha(0, time, false);
 		}
 		else
 		{
-			passageResults.Add(currentPassage.title, PassageType.B);
+			if(!passageResults.ContainsKey(currentPassage.title)) passageResults.Add(currentPassage.title, PassageType.B);
 			HyperTextB.CrossFadeAlpha(0, time, false);
 		}
 
