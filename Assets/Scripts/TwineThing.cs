@@ -50,6 +50,10 @@ public class TwineThing : MonoBehaviour {
 
 	private TweePassage currentPassage;
 
+	public Menu menu;
+
+	public bool gameStarted;
+
 	// Keeping track of which version was selected of each passage
 	// <passageName, passagetype> 
 	public Dictionary<string, PassageType> passageResults = new Dictionary<string, PassageType>();
@@ -119,22 +123,38 @@ public class TwineThing : MonoBehaviour {
 
 		tweeText = TweeFile.text;
 		Parse();
-
-		TweePassage startPassage = passages["Start"];
-		currentPassage = startPassage;
-
-		SetUiText(startPassage);
-
-		activeText = HyperTextA;
-		HyperTextB.CrossFadeAlpha(0, 0, true);
 	}
 
 	void Update()
 	{
+
+
 		if(Input.GetKeyDown(KeyCode.Tab))
 		{
-			SwitchGlyph();
+			if(menu.canvasGroup.alpha < 1)
+				SwitchGlyph();
 		}
+	}
+
+	public void StartGame()
+	{
+		TweePassage startPassage = passages["Start"];
+		currentPassage = startPassage;
+		passageResults.Clear();
+
+		if(activeText == HyperTextB)
+		{
+			HyperTextA.CrossFadeAlpha(1, 1, false);
+			HyperTextB.CrossFadeAlpha(0, 0.5f, false);
+			RotateGlyphDown();
+		}
+
+		//SetUiText(startPassage);
+		activeText = HyperTextA;
+		StartCoroutine(SwitchToPassage(startPassage, 0.5f));
+
+		HyperTextB.CrossFadeAlpha(0, 0, true);
+		gameStarted = true;
 	}
 
 	public void SwitchGlyph()
@@ -161,12 +181,12 @@ public class TwineThing : MonoBehaviour {
 
 	void RotateGlyphUp()
 	{
-		iTween.RotateTo(inputGlyph, iTween.Hash("x", 90, "time", 0.5f));
+		iTween.RotateTo(inputGlyph, iTween.Hash("x", 90, "time", 0.75f));
 	}
 
 	void RotateGlyphDown()
 	{
-		iTween.RotateTo(inputGlyph, iTween.Hash("x", 0, "time", 0.5f));
+		iTween.RotateTo(inputGlyph, iTween.Hash("x", 0, "time", 0.75f));
 	}
 
 	private void Parse () {
