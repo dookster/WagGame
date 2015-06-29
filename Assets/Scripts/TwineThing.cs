@@ -58,7 +58,7 @@ public class TwineThing : MonoBehaviour {
 	// <passageName, passagetype> 
 	public Dictionary<string, PassageType> passageResults = new Dictionary<string, PassageType>();
 
-	HyperText activeText;
+	public HyperText activeText;
 	string tweeText;
 
 	public Dictionary<string, TweePassage> passages = new Dictionary<string, TweePassage>();
@@ -94,9 +94,18 @@ public class TwineThing : MonoBehaviour {
 				string val = valKey.Substring(0,1);
 				string key = valKey.Substring(1);
 
-				Debug.Log("Key: " + key + " Val: " + TwineThing.Instance.passageResults[key]);
+				string part = result.Substring(startI, endI - startI+2);
 
-				result = result.Replace("(%", "");
+				if((TwineThing.Instance.passageResults[key].ToString() == val))
+				{
+					// show part
+					result = result.Replace(part, part.Replace("(%", "").Replace("%)", "").Substring(nextSpace-startI-1));
+				}
+				else
+				{
+					// hide part
+					result = result.Replace(part, "");
+				}
 			}
 			return result;
 		}

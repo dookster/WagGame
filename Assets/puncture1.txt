@@ -1,0 +1,40 @@
+﻿:: Start
+I must have been about five when I saw the first hole. Old enough to make stuff up, but not old enough to lie. Not really.
+
+[[I quickly learned not to talk about it.|intro1]]
+
+
+:: StoryTitle
+Untitled Story
+
+
+:: intro1
+Soon my parents would get upset whenever I talked about it. I didn't know why, but I figured the holes were just one of those things.
+
+I guess most ((catholic|country )) kids learn there are subjects adults are uncomfortable to talk about. I knew the holes were special.
+
+[[And if I had to keep it to myself, so be it.|intro2]]
+
+
+:: StoryAuthor
+Anonymous
+
+
+:: intro2
+I saw the first hole ((in my dad's office|out in the garden )). That's to say that's where I was when I saw it. The holes are not not 'in' anything. They looked like black spots hovering in the air, holes between things.
+
+I remember being worried and confused, but never scared.
+
+[[I reached out to touch it|touch1]]
+
+[[I took a closer look at it|look1]]
+
+
+:: look1
+
+
+
+:: touch1
+
+
+

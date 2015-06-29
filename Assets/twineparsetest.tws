@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VWee (%AThistle Why is it so dark? I have to stop waking up so ((late |early)) like this. %)\u000a\u000aSomething's glowing over there... I don't remember plugging in my nightlight.\u000a\u000a\u000a[[Check out the weird glow|night_light]] \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
+VWhy is it so dark? I have to stop waking up so ((late |early)) like this.\u000a\u000a(%AThistle What what %)\u000a\u000aSomething's glowing over there... I don't remember plugging in my nightlight.\u000a\u000a\u000a[[Check out the weird glow|night_light]] \u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]\u000a
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2015
 I6
-I26
-I17
-I55
-I25
-I4
-I177
+I28
+I21
+I12
+I16
+I6
+I179
 I1
 tp27
 (dp28
@@ -156,7 +156,7 @@ sg33
 g58
 sbsa(dp60
 g14
-I00
+I01
 sg15
 (lp61
 F415.0
@@ -167,7 +167,7 @@ Tiddler
 p62
 (dp63
 g21
-VI haven't used this nightlight since I was a kid. \u000a\u000aIt's a little plastic cube, it used to glow bright green but ((someone has|it seems I )) covered it in black nail polish. \u000a\u000a\u000a[[Go back to sleep|back_to_sleep]]\u000a\u000a[[Get dressed|get_dressed]]
+VI haven't used this nightlight since I was a kid. \u000a\u000aIt's a little plastic cube, it used to glow bright green but ((someone has|it seems I )) covered it in black nail polish. \u000a\u000a\u000a(%BWaking [[Go back to sleep|back_to_sleep]]%)\u000a\u000a[[Get dressed|get_dressed]]\u000a
 p64
 sg23
 Vnight_light
@@ -176,12 +176,12 @@ sg25
 g26
 ((I2015
 I6
-I10
+I28
 I22
-I36
-I27
-I2
-I161
+I11
+I49
+I6
+I179
 I1
 tp66
 (dp67
@@ -217,7 +217,7 @@ Tiddler
 p77
 (dp78
 g21
-VNo, there's no point now. I better just get up, my parents ((will be home soon and| are still gone but  )) I have to take care of the house.\u000a\u000a\u000a[[Get dressed|get_dressed]]
+VNo, there's no point now. I better just get up, my parents ((will be home soon and| are still gone but  )) I have to take care of the house.\u000a\u000a\u000a[[Get dressed|get_dressed]]\u000a
 p79
 sg23
 Vback_to_sleep
@@ -226,12 +226,12 @@ sg25
 g26
 ((I2015
 I6
-I10
-I22
-I36
-I32
-I2
-I161
+I28
+I21
+I20
+I5
+I6
+I179
 I1
 tp81
 (dp82
@@ -293,7 +293,7 @@ sg33
 g99
 sbsa(dp101
 g14
-I01
+I00
 sg15
 (lp102
 F267.0
@@ -304,7 +304,7 @@ Tiddler
 p103
 (dp104
 g21
-VA ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." \u000a"That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."\u000a\u000a[[Wake up|Waking]]\u000a[[Look at the moon|Moon]]
+VA ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." \u000a"That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."\u000a\u000a\u000a[[Wake up|Waking]]\u000a\u000a[[Look at the moon|Moon]]\u000a
 p105
 sg23
 VThistle
@@ -313,12 +313,12 @@ sg25
 g26
 ((I2015
 I6
-I26
-I17
-I54
+I28
+I21
 I12
-I4
-I177
+I0
+I6
+I179
 I1
 tp107
 (dp108
@@ -354,7 +354,7 @@ Tiddler
 p118
 (dp119
 g21
-VThe Moon once begged ((her Mother|his Father)) to make ((her|him)) a ((gown|hat )). "How can I?" replied ((she|he )); "there's no fitting your figure. At one time you're a New Moon, and at another you're a Full Moon; and between whiles you're neither one nor the other."\u000a\u000a-Aesop(( |?))\u000a\u000a[[Look at the ground|Thistle]]
+VThe Moon once begged ((her Mother|his Father)) to make ((her|him)) a ((gown|hat )). "How can I?" replied ((she|he )); "there's no fitting your figure. At one time you're a New Moon, and at another you're a Full Moon; and between whiles you're neither one nor the other."\u000a\u000a-Aesop(( |?))\u000a\u000a\u000a[[Look at the ground|Thistle]]\u000a
 p120
 sg23
 VMoon
@@ -363,12 +363,12 @@ sg25
 g26
 ((I2015
 I6
-I26
+I28
 I21
-I41
-I32
-I4
-I177
+I12
+I9
+I6
+I179
 I1
 tp122
 (dp123
@@ -404,7 +404,7 @@ Tiddler
 p133
 (dp134
 g21
-V\u000a[[Thistle|Thistle]]\u000a[[Moon|Moon]]
+V\u000a[[Thistle|Thistle]]\u000a\u000a[[Moon|Moon]]\u000a
 p135
 sg23
 VStart
@@ -413,12 +413,12 @@ sg25
 g26
 ((I2015
 I6
-I26
-I17
-I55
-I15
-I4
-I177
+I28
+I21
+I11
+I52
+I6
+I179
 I1
 tp137
 (dp138

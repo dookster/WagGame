@@ -1,7 +1,9 @@
 ﻿:: Start
 
 [[Thistle|Thistle]]
+
 [[Moon|Moon]]
+
 
 
 :: StoryTitle
@@ -12,8 +14,11 @@ Untitled Story
 A ((Girl|Boy)) was gathering berries from a hedge when ((her|his)) hand was stung by a Nettle. Smarting with the pain, ((she|he )) ran to tell ((her|his)) mother, and said to her between ((her|his)) sobs, "I only touched it ever so lightly, mother." 
 "That's ((just|not )) why you got stung," she said; "if you had grasped it firmly, it ((wouldn't have hurt you in the least|would have hurt you even more))."
 
+
 [[Wake up|Waking]]
+
 [[Look at the moon|Moon]]
+
 
 
 :: Moon
@@ -21,7 +26,9 @@ The Moon once begged ((her Mother|his Father)) to make ((her|him)) a ((gown|hat 
 
 -Aesop(( |?))
 
+
 [[Look at the ground|Thistle]]
+
 
 
 :: StoryAuthor
@@ -29,7 +36,9 @@ Anonymous
 
 
 :: Waking
-Wee (%AThistle Why is it so dark? I have to stop waking up so ((late |early)) like this. %)
+Why is it so dark? I have to stop waking up so ((late |early)) like this.
+
+(%AThistle What what %)
 
 Something's glowing over there... I don't remember plugging in my nightlight.
 
@@ -41,15 +50,17 @@ Something's glowing over there... I don't remember plugging in my nightlight.
 [[Get dressed|get_dressed]]
 
 
+
 :: night_light
 I haven't used this nightlight since I was a kid. 
 
 It's a little plastic cube, it used to glow bright green but ((someone has|it seems I )) covered it in black nail polish. 
 
 
-[[Go back to sleep|back_to_sleep]]
+(%BWaking [[Go back to sleep|back_to_sleep]]%) 
 
 [[Get dressed|get_dressed]]
+
 
 
 :: back_to_sleep
@@ -57,6 +68,7 @@ No, there's no point now. I better just get up, my parents ((will be home soon a
 
 
 [[Get dressed|get_dressed]]
+
 
 
 :: get_dressed
