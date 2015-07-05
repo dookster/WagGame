@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Candlelight.UI;
 using System.Collections;
+using UnityEngine.UI;
 
 public class TwineThing : MonoBehaviour {
 
@@ -34,6 +35,8 @@ public class TwineThing : MonoBehaviour {
 	public HyperText MainHyperText;
 	public HyperText HyperTextA;
 	public HyperText HyperTextB;
+
+	public Text HelpText;
 
 	public Color ColorA;
 	public Color ColorB;
@@ -96,7 +99,7 @@ public class TwineThing : MonoBehaviour {
 
 				string part = result.Substring(startI, endI - startI+2);
 
-				if((TwineThing.Instance.passageResults[key].ToString() == val))
+				if(TwineThing.Instance.passageResults.ContainsKey(key) && (TwineThing.Instance.passageResults[key].ToString() == val))
 				{
 					// show part
 					result = result.Replace(part, part.Replace("(%", "").Replace("%)", "").Substring(nextSpace-startI-1));
@@ -147,6 +150,7 @@ public class TwineThing : MonoBehaviour {
 
 	public void StartGame()
 	{
+		HelpText.enabled = true;
 		TweePassage startPassage = passages["Start"];
 		currentPassage = startPassage;
 		passageResults.Clear();
@@ -168,6 +172,8 @@ public class TwineThing : MonoBehaviour {
 
 	public void SwitchGlyph()
 	{
+		HelpText.enabled = false;
+
 		if(blockInput) return;
 		
 		AudioSource.PlayClipAtPoint(woosh, transform.position);

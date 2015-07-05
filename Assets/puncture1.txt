@@ -1,7 +1,25 @@
 ﻿:: Start
 I must have been about five when I saw the first hole. Old enough to make stuff up, but not old enough to lie. Not really.
 
-[[I quickly learned not to talk about it.|intro1]]
+((They are are among my earliest and surest of memories.|I still wonder how much of it I made up.))
+
+
+[[I quickly learned not to talk about it|intro1]]
+
+
+:: FirstIncident1
+It was around my twelfth birthday.
+
+My parents had company. I could hear them downstairs, their laughing and talking almost drowning out the music. ((They only listened to those records when they had guests.|My parents were quiet, apparently just hosts for gossip.))
+
+I was sitting in my room, too shy to even say hello. And I was certain my parents preferred it that way too.
+
+
+[[I was getting hungry|FirstIncident2-1]]
+
+
+:: Finale1
+
 
 
 :: StoryTitle
@@ -9,13 +27,22 @@ Untitled Story
 
 
 :: intro1
-That would only get my parents upset. I didn't know why, but I figured the holes were just one of those things...
+My stories would upset my parents. I didn't know why, but I figured the holes were just one of those things...
 
-Like many ((catholic|country )) kids are sure to learn, there are subjects adults are just uncomfortable to talk about. 
+Like many ((catholic|country )) kids are sure to learn, there are subjects adults are just not comfortable talking about. 
 
-I knew the holes were special.
 
-[[And if I had to keep it to myself, so be it.|intro2]]
+[[And if I had to keep it to myself, so be it|intro2]]
+
+
+:: FirstIncident2-1
+Sneaking into the kitchen I found it almost empty. Only crumbs on plates and empty bottles. Even the fridge yawned emptily. I ((peeked towards|hurried past  )) the livingroom door as I went for the cellar. 
+
+
+There might have been some snacks among the cans and preserves down there. 
+
+
+[[I walked down to the cellar|FirstIncident4]]
 
 
 :: StoryAuthor
@@ -23,48 +50,195 @@ Anonymous
 
 
 :: intro2
-I saw the first holes ((in my dad's office|out in the garden )). That's to say that's where I was when I saw them. The holes were not not 'in' anything. Rather they seemed like small tears, hovering in the space between things.
+I saw them first ((in my dad's office|out in the garden )). That's to say that's where I was when I saw them. The holes were not 'in' anything. Rather they seemed like small tears, hovering in the space between things.
 
 They moved a little when I did. If I moved closer they seemed to move away, if I turned my head they seemed to wobble, as pebbles refracted in a stream of water.
 
-[[I reached out to touch it|touch1]]
 
-[[I took a closer look at it|look1]]
+[[I reached out to touch them|touch1]]
+
+[[I took a closer look|look1]]
 
 
 :: look1
+It took a few moments to realize I wasn't just seing things. The holes seemed to move when I did. If I leaned to the side they'd stay in place. If I moved closer they seemed to move away from me, but only a little. 
+
+(%Aintro2 I moved my dad's books out of the way and there they were again. Now like dark, shimmering spots against the back of the bookcase.%)(%Bintro2 I moved slowly around my mother's rose bush, and a few shimmering holes seemed to stay in the middle. When I moved closer they disappeared among the leaves.%)
 
 
-[[something|look2]]
+(%Aintro2 [[I leaned in closer to the back of the case|look2]]%)(%Bintro2 [[I leaned in closer to the bush|look2]]%)
 
 
 :: touch1
-(%Aintro2 I raised my hand out towards a couple of spots - and stopped. They faded as I moved in closer, disappearing into the books on my father's bookshelf. %)
-(%Bintro2 I raised my hand out towards a couple of spots - and stopped. They faded as I moved in closer, disappearing into the dark leaves of the bushes. %)
+(%Aintro2 I raised my hand out towards a couple of holes - and stopped. They faded as I moved in closer, disappearing into the books on my father's bookshelf. %)(%Bintro2 I raised my hand out towards a couple of holes - and stopped. They faded as I moved in closer, disappearing into the dark leaves of the bushes. %)
 
 I took a deep breath, kept my hand out, and ((turned my head|closed my eyes)). 
+
 
 [[I felt a sharp tingling at the tip of my finger|touch2]]
 
 
+:: FirstIncident4
+I had barely stepped off the last step of the stairs when the darkness closed in and I heard the unmistakable click of the brown cellar door closing behind me.
+
+It sounded like someone in the livingroom slowly turned the music ((up.|down.))
+
+[[I grasped for the lightswitch|lightSwitch]]
+
+[[I turned and ran back up|door1]]
+
+
+:: door1
+The door handle slid out of the old door. The metal rod holding it to the door fell out, tumbling down the stairs in the darkness.
+
+
+
+
+[[I knocked on the door|knock1]]
+
+[[I went back down|lightSwitch]]
+
+
 :: look2
+There were two holes. Slowly, almost imperceptibly they circled each other, speeding up as I looked closer. The air crackled and ((with a crack like the snap of fingers |with a crunch like a bite in an apple )) they merged. Merged together and grew with a slow organic throbbing. 
+
+That must have been the last straw. I don't remember if I made a sound, but I remember running (%Aintro2 out of the room%)(%Bintro2 back to the house%).
 
 
-[[something|endIntro]]
+[[And slamming the kitchen door behind me|endIntro]]
 
 
 :: touch2
 Fighting the urge to pull my hand back I slowly (%Atouch1 turned my head%)(%Btouch1 opened my eyes%) and looked at my fingers.
 
-I couldn't see anything, and the tingling subsided, replaced by the sudden smell of ((burning plastic|rotting apples )). Startled, I pulled my hand back. Gasping for air, and too scared to cry.
+I couldn't see anything, and the tingling subsided, replaced by the sudden smell of ((burning plastic|rotting apples )). Startled, I pulled my hand back. Gasping for air and too scared to cry.
+
 
 [[I backed away, keeping my eyes on the holes|endIntro]]
 
-(%Aintro2 [[I turned and ran out of the office|endIntro]]%)(%Bintro2 [[I turned and ran out of the garden|endIntro]]%).
+(%Aintro2 [[I turned and ran out of the office|endIntro]]%)(%Bintro2 [[I turned and ran out of the garden|endIntro]]%)
 
+
+
+:: knock1
+I knocked on the door, banging my fist against it several times ((before|never )) building up the courage to shout. (%Adoor1 The music was even louder than before, there was no way they could hear me.%)(%Bdoor1 No matter how much noise I tried to make, only silence came from the other side of the door.%)
+
+
+[[I could only step back down|lightSwitch]]
 
 
 :: endIntro
+I felt safer when I returned to the kitchen. I closed the door and stared at it for several moments. Afraid that turning my gaze from the solidity of the bright blue painted wood would only reveal more spots. 
+
+[[I must have stood like that until my mother found me|endIntro2]]
+
+[[I don't remember when I finally looked away|endIntro2]]
+
+
+:: lightSwitch
+I felt my way across the wall. My trembling, impatient fingers flicking the switch and flooding the little room with light. 
+
+I barely had a moment to catch my breath before (%Alook2 I heard a loud snap behind me.%)(%Blook2 I heard a slow, wet crunch behind me.%)(%Atouch2 the sweet, nauseating stench of burning plastic reached my nose.%)(%Btouch2 the thick revolting smell of rotten fruit filled the room.%)
+
+I turned to see a wide, dark void turning and twisting at the foot of the stairs. ((I froze for a second before averting my eyes.|My stomach turned, but I kept my eyes on the twisting hole.))
+
+
+[[I tried to back away|backAway]]
+
+[[I stepped closer|stepCloser]]
+
+
+:: endIntro2
+My parents quickly made it clear they had no patience for my nonsense. (%Aintro1 A religious upbringing requires an acceptance of only the right kind of fantastical and impossible.%) 
+
+After that first close encounter I ((was visited by the spots several times| managed to avoid looking at the spots)) through most of my childhood. 
+
+[[Living with them took effort|endIntro3]]
+
+[[After a while they seemed to give up|endIntro3]]
+
+
+:: backAway
+The swirling darkness of the void seemed to grow as I walked backwards. The pitch black disc moving, even gliding across my vision as I tried to look away. 
+
+With my back against the wall ((I soon had no choice.|I faced the terror.))
+
+
+[[I walked straight towards the darkness|stepCloser]]
+
+
+:: endIntro3
+When they did turn up I learned how to handle it. Sometimes closing one eye, or tilting my head just a bit. Just like trying to dodge a stray sunbeam hitting your eyes. 
+
+In time it felt almost like a game. I might shift in my seat at the dinner table, move my chair for a change of perspective and I'd see a round black void where my ((father's|mother's)) head would be.
+
+[[But I never lingered on them for long|endIntro4]] 
+
+
+:: stepCloser
+With the first step it was abundantly clear that I no longer had the control over the holes I thought I had. The darkness grew around me with every move. Stretching to fill my field of view.
+
+((Jumping...|Falling...))
+
+[[Sinking into darkness|fallIn]]
+
+
+:: endIntro4
+Even the slightest hint of that terrible (%Alook1 sound%)(%Blook1 sound%)(%Atouch1 smell%)(%Btouch1 smell%) and the game was over.
+
+((I began suspecting that|I refused to face that )) perhaps I wasn't the one playing the game.
+
+
+[[But that took me years to realize|FirstIncident1]]
+
+
+:: fallIn
+I woke up in the (%Aintro2 office%)(%Bintro2 garden%). My head was pounding and I could hardly see. I got to my feet and scrambled for the familiar shape of the blue kitchen door.
+
+
+[[I grabbed the doorhandle|returnKitchen]]
+
+
+:: returnKitchen
+Or I tried anyway. I fumbled for a few moments before realizing I was grabbing the wrong side of the door. It finally swung open and I stumbled into the kitchen. 
+
+The strange mirrored version of the kitchen anyway. Every cupboard, window and door in the room ((exactly where it should not be. |a perfect mirror of what it was.)) (%Atouch2 And the room filled with a by now too familiar stench.%)(%Btouch2 And the room filled with a by now too familiar stench.%)
+
+
+[[I cried out for my parents|parentsReturn]]
+
+
+:: parentsReturn
+As my (%AendIntro3 father%)(%BendIntro3 mother%) opened the door from the livingroom, little dark motes started swirling at the edges of my vision. (%AFirstIncident4 The entire house was quiet as the grave.%)(%BFirstIncident4 And that obnoxious music blared out the door.%)
+
+As I looked up I ((threw my head from side to side.|blinked and squinted at the swirling spots.)) 
+
+
+[[But nothing could hide that hole where (%AendIntro3 his%)(%BendIntro3 her%) head should be.|parentsReturn2]]
+
+
+:: parentsReturn2
+I fell onto my back, crawling backwards frantically, and all I could see was (%AendIntro3 his%)(%BendIntro3 her%) body shrinking from view and that dark ((hole|head)) growing and growing...
+
+(%Alook2 Shouting with a voice like dry twigs snapping.%)(%Blook2 Shouting with a voice like boots stomping on snails.%)
+
+
+[[...|End]]
+
+
+
+
+
+:: End
+
+
+
+
+((The End|To be continued))
+
+
+
+
 
 
 
