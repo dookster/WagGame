@@ -8,11 +8,14 @@ public class Menu : MonoBehaviour {
 	public Button quitButton;
 	public Button helpButton;
 	public Button backButton;
+	public Button creditsButton;
 	public GameObject inGameGroup;
 
 	public Text startText;
 
 	public CanvasGroup canvasGroup;
+
+	public CreditsView creditsViewGroup;
 	
 	// Use this for initialization
 	void Start () {
@@ -20,6 +23,7 @@ public class Menu : MonoBehaviour {
 		quitButton.onClick.AddListener(QuitClick);
 		backButton.onClick.AddListener(BackClick);
 		helpButton.onClick.AddListener(HelpClick);
+		creditsButton.onClick.AddListener(CreditsClick);
 		FadeIn();
 	}
 
@@ -57,6 +61,11 @@ public class Menu : MonoBehaviour {
 	public void BackClick()
 	{
 		FadeOut();
+	}
+
+	public void CreditsClick()
+	{
+		creditsViewGroup.FadeIn();
 	}
 
 	public void HelpClick()
